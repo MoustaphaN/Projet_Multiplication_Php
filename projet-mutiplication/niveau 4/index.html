@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Atelier PHP - Étape 4</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		html {
+		    height: 100%;
+		}
+		body {
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			background-attachment: fixed;
+			background: linear-gradient(#2196F3 250px, #EEEEEE 1px);
+		}
+		header {
+			margin: auto;
+			width: 570px;
+			padding: 15px;
+			color: #FFFFFF;
+		}
+		.contentbox {
+			padding: 0px;
+			margin: auto;
+			width: 600px;
+
+		}
+		.maincontent {
+			float: left;
+			display: block;
+			width: 596px;
+			background-color: #FFFFFF;
+			border-radius: 0.125rem;
+			box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.25);
+		}
+		
+		.action_buttons {
+			float: left;
+			width: 100%;
+			margin-bottom: 5px;
+
+		}
+		
+		.button {
+			float: right;
+			margin-right: 25px;
+		}
+		
+		.button INPUT {
+			margin:10px; padding: 5px;
+			width: 100%;
+			height: 40px;
+			border-radius:0;
+			border: 0px;
+			background-color: transparent;
+			font-size: 18px;
+			color: #1976D2;
+			border-radius: 0.2em;
+
+		}
+		
+		.button INPUT:hover {
+			background-color: #E3F2FD;
+
+		}
+		
+		.fields {
+			float: left;
+			margin: auto;
+			width: 540px;
+			padding: 25px;
+			color: #424242;		
+		}
+		
+		SELECT {
+				width: 80%;
+			    padding:3px;
+			    height: 30px;
+			    margin: 0;
+			    border-radius:1em;
+			    font-size: 18px;
+			    
+		}
+
+		
+		
+	</style>
+</head>
+<body onload="choix()">
+
+<header>
+	<h1>Atelier PHP - Étape 4</h1>
+	<p>REVISER TABLE DE MULTIPLICATION</p>
+</header>
+
+<form method="POST" action="choix.php">
+
+<section class="contentbox">
+	
+	<br><br><br><br><br><br>
+	<div class="maincontent">
+		
+	
+		
+			
+		</div>
+		<div>
+			<h3>Question 1</h3>
+			<input type="text" name="resultat" id="resultat">
+			<label for="resultat" >*</label> 
+			<input type="text" name="resultat1" id="resultat1">
+		
+			<label for="resultat3" >=</label> 
+			<input type="text" name="resultat3" required>
+
+		</div>
+		<div>
+			<h3>Question 2</h3>
+			<input type="text" name="resultat4" id="resultat4">
+			<label for="resultat" >*</label> 
+			<input type="text" name="resultat5" id="resultat5">
+			<label for="resultat" >=</label> 
+			<input type="text" name="resultat6" required>
+
+		</div>
+		<div>
+			<h3>Question 3</h3>
+			<input type="text" name="resultat7" id="resultat7">
+			<label for="resultat" >*</label> 
+			<input type="text" name="resultat8" id="resultat8">
+			
+			<label for="resultat" >=</label> 
+			<input type="text" name="resultat9" required>
+
+		</div>
+		<div>
+			<h3>Question 4</h3>
+			<input type="text" name="resultat10" id="resultat10">
+			<label for="resultat" >*</label> 
+			<input type="text" name="resultat11" id="resultat11">
+			
+			<label for="resultat" >=</label> 
+			<input type="text" name="resultat12" required>
+
+		</div>
+	
+		<div class="action_buttons">
+			<div class="button"><input type="submit" value="Voir les reponses"></div>
+			<div class="button"><input type="reset" value="Annuler"></div>
+		</div>
+	
+	</div>	 
+</section>
+
+</form>
+<script type="text/javascript">
+	function choix() {
+		// body...
+	
+	var num = Math.floor(Math.random() *10) + 1;
+	var ins =document.getElementById('resultat');
+	ins.value=num;
+	var num1 = Math.floor(Math.random() *10) + 1;
+	var ins1 =document.getElementById('resultat1');
+	ins1.value=num1;
+	
+	var num4 = Math.floor(Math.random() *10) + 1;
+	var ins4 =document.getElementById('resultat4');
+	ins4.value=num4;
+
+	var num5 = Math.floor(Math.random() *10) + 1;
+	var ins5 =document.getElementById('resultat5');
+	ins5.value=num5;
+
+	var num7 = Math.floor(Math.random() *10) + 1;
+	var ins7 =document.getElementById('resultat7');
+	ins7.value=num7;
+
+	var num8 = Math.floor(Math.random() *10) + 1;
+	var ins8 =document.getElementById('resultat8');
+	ins8.value=num8;
+
+	var num10 = Math.floor(Math.random() *10) + 1;
+	var ins10 =document.getElementById('resultat10');
+	ins10.value=num10;
+
+	var num11 = Math.floor(Math.random() *10) + 1;
+	var ins11 =document.getElementById('resultat11');
+	ins11.value=num11;
+	}
+
+</script>
+</body>
+</html>
+
+
